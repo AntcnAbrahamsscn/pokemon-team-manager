@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.first-page-flex-container {
+    height: 100%; /* Set the height of the container to fill the viewport */
+    justify-content: space-between; 
+    display: flex;
+    flex-direction: column;
+}
+
+.img-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 4em;
+}
+
+.img-text-container h1,
+.img-text-container h2 {
+    font-size: 2.7em;
+    margin: 0;
+    border-radius: 3px;
+    background-color: #fe4a49;
+    color: #ebebeb;
+    padding: 0 1em;
+    border: 3px solid #ebebeb;
+    background-clip: padding-box;
+    position: relative; /* Ensure positioning context */
+}
+
+.img-text-container h1 {
+    transform: rotate(-7deg); /* Adjust the angle as needed */
+    z-index: 2; /* Ensure text is behind the image */
+
+}
+
+.img-text-container h2 {
+    transform: rotate(2deg); /* Adjust the angle as needed */
+    font-size: 1.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.img-text-container img {
+    position: relative;
+    top: 1em;
+    z-index: 9999; /* Ensure the image is on top of text */
+    margin-top: -1em; /* Adjust the negative margin to control the overlap */
+}
+
+.color-selection-container {
+    background-color: #fe4a49;
+    text-align: center;
+    padding-bottom: 4em;
+    width: 100%;
+}
+
+.color-selection-container h3 {
+    color: #ebebeb;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    max-width: 300px;
+    margin: 0 auto;
+
+}
+
+.color-content {
+    /* background-color: #ebebeb; */
+    border: 3px solid #ebebeb;
+    border-radius: 3px;
+    height: 1.5em;
+    flex-grow: 1;
+}
+
+.red-color {
+    background-color: #fe4a49;
+}
+
+.blue-color {
+    background-color: #28536b;
+}
+.yellow-color {
+    background-color: #f9a03f;
+}
